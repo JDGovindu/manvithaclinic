@@ -9,7 +9,6 @@ body {
 }
 
 ul {
-    padding-left: 15px;
     margin-bottom: 0;
     list-style: none;
 }
@@ -64,6 +63,10 @@ header{
 
 .bg-gray {
     background-color: #F6F6F6;
+}
+
+.bg-purple {
+    background-color: #8c52ff;
 }
 
 .navbar {
@@ -214,7 +217,6 @@ header{
 .btn, .read-more {
     display: inline-block;
     padding: 12px 25px;
-    background: #CD9076;
     border-radius: 3px;
     font-size: 16px;
     white-space: nowrap;
@@ -241,6 +243,7 @@ header{
     width: 100%;
     overflow: hidden;
     border-radius: 15px;
+    margin-bottom: 10px;
     position: relative;
 }
 
@@ -265,19 +268,42 @@ header{
 }
 
 .service-info {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     position: relative;
     bottom: 0;
-    padding: 20px 15px;
-    background-color: #fff;
+    background-color: #8c52ff;
+    align-items: center;
     text-align: center;
 }
 
 .service-info h4 {
     font-size: 18px;
     font-weight: 400;
-    color: #343434;
+    margin-left: 20px;
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
+}
+
+.servies-icon {
+    width: 90px;
+    height: 90px;
+    /* margin: -70px auto 16px; */
+    background: #fff;
+    /* border-radius: 50%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 0px 5px rgb(0 0 0 / 20%); */
+    background-color: gray;
+}
+
+.servies-icon img {
+    width: 200px;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    transition: all .5s ease-in-out;
 }
 
 .btn:hover, .read-more:hover {
@@ -359,6 +385,15 @@ header{
     color: #000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.com-topsub-heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     margin-bottom: 30px;
 }
 
@@ -780,23 +815,6 @@ footer span {
 
 .about-info p {
     margin-bottom: 30px;
-}
-
-.servies-icon {
-    width: 90px;
-    height: 90px;
-    margin: -70px auto 16px;
-    background: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 0px 5px rgb(0 0 0 / 20%);
-}
-
-.servies-icon img {
-    width: 55px;
-    transition: all .5s ease-in-out;
 }
 
 #videso-modal .modal-content,

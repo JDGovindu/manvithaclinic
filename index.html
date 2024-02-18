@@ -28,6 +28,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     
+    <script src="jquery.js"></script> 
+    <script src="services.js"></script>
+
 <style>
 
 .carousel-caption{
@@ -53,42 +56,44 @@ text-align:left;
         </div>
         <div id="mobile-menu-wrap"></div>
         <div class="offcanvas__btn">
-            <a href="#" class="primary-btn">Appointment</a>
+            <a href="#" class="primary-btn">Book Consultation</a>
         </div>
         <ul class="offcanvas__widget">
-            <li><i class="fa fa-phone"></i> 1-677-124-44227</li>
-            <li><i class="fa fa-map-marker"></i> Los Angeles Gournadi, 1230 Bariasl</li>
-            <li><i class="fa fa-clock-o"></i> Mon to Sat 9:00am to 18:00pm</li>
+            <!-- <li><i class="fa fa-phone"></i>8885872872</li> -->
+            <li><i class="fa fa-envelope"></i>dr.polurimanvitha2095@gmail.com</li>
+            <li><i class="fa fa-clock-o"></i> Mon to Sat 3:00pm to 5:00pm</li>
         </ul>
-        <div class="offcanvas__social">
+    </div>
+    <div class="col-lg-4">
+       <!-- <div class="header__top__right">
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-instagram"></i></a>
             <a href="#"><i class="fa fa-dribbble"></i></a>
-        </div>
+        </div> -->
     </div>
     <!-- Offcanvas Menu End -->
 
     <!-- Header Section Begin -->
     <header class="header">
         <div class="header__top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <ul class="header__top__left">
-                            <li><i class="fa fa-phone"></i> 1-677-124-44227</li>
-                            <li><i class="fa fa-map-marker"></i> Los Angeles Gournadi, 1230 Bariasl</li>
-                            <li><i class="fa fa-clock-o"></i> Mon to Sat 9:00am to 18:00pm</li>
+            <div class="container header__container">
+                <div class="row header__container">
+                    <!-- <div class="col-lg-8"> -->
+                        <ul class="header__top__right">
+                            <!-- <li><i class="fa fa-phone"></i>8885872872</li> -->
+                            <li><i class="fa fa-envelope"></i>dr.polurimanvitha2095@gmail.com</li>
+                            <li><i class="fa fa-clock-o"></i> Mon to Sat 3:00pm to 5:00pm</li>
                         </ul>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="header__top__right">
+                    <!-- </div> -->
+                    <!-- <div class="col-lg-4"> -->
+                       <!-- <div class="header__top__right">
                             <a href="#"><i class="fa fa-facebook"></i></a>
                             <a href="#"><i class="fa fa-twitter"></i></a>
                             <a href="#"><i class="fa fa-instagram"></i></a>
                             <a href="#"><i class="fa fa-dribbble"></i></a>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -104,21 +109,21 @@ text-align:left;
                         <nav class="header__menu">
                             <ul>
                                 <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./about.html">About</a></li>
-                                <li><a href="./services.html">Services</a></li>
+                                <li ><a href="./about.html">About Doctor</a></li>
+                                <li><a href="./services.html">Treatments</a></li>
                                 <!--<li><a href="#">Pages</a>
                                     <ul class="dropdown">
                                         <li><a href="./pricing.html">Pricing</a></li>
                                         <li><a href="./doctor.html">Doctor</a></li>
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
-                                </li>-->
+                                </li>
                                 <li><a href="./blog.html">News</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
+                                <li><a href="./contact.html">Contact</a></li>-->
                             </ul>
                         </nav>
                         <div class="header__btn">
-                            <a href="#" class="primary-btn">Appointment</a>
+                            <a href="#" class="primary-btn">Book Consultation</a>
                         </div>
                     </div>
                 </div>
@@ -130,32 +135,17 @@ text-align:left;
     </header>
     <!-- Header Section End -->
 
-    <!-- Hero Section Begin -->
-    <!--<section class="hero spad set-bg" data-setbg="img/hero-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="hero__text">
-                        <span>Eiusmod tempor incididunt </span>
-                        <h2>Take the world's best quality Treadment</h2>
-                        <a href="#" class="primary-btn normal-btn">Contact us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>-->
-    <!-- Hero Section End -->
-    
+<!--     
  <div>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
+    Indicators
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
       <li data-target="#myCarousel" data-slide-to="1"></li>
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
+    Wrapper for slides
     <div class="carousel-inner">
 
       <div class="item active">
@@ -196,7 +186,7 @@ text-align:left;
   
     </div>
 
-    <!-- Left and right controls -->
+    Left and right controls
     <a class="left carousel-control" href="#myCarousel" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left"></span>
       <span class="sr-only">Previous</span>
@@ -206,7 +196,7 @@ text-align:left;
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
+</div> -->
 
 
     <!-- Consultation Section Begin -->
@@ -266,59 +256,61 @@ text-align:left;
     
       <section class="our-servicepanel tb-space bg-gray">
         <div class="container">
-            <div class="row g-3">
-                <div class="col-lg-9 col-md-8">
-                    <h6 class="com-topsub-title">Have skin and hair troubles?</h6>
-                    <h1 class="com-title mb-4">We solve the problem and give<br> solutions better</h1>
-                    <p>At Alovia, we help you in achieving your goal of healthy glowing skin by understanding the root
-                        cause and offering remedial measures accordingly. Read more about our services and reach out to
-                        us for customized treatment
-                        packages.
+            <div>
+                <div class="col-lg-8">
+                    <h6 class="com-topsub-title">Are skin and hair issues holding you back?</h6>
+                    <h1 class="com-title mb-4">Discover effective solutions at Manvitha's Skin and Hair Clinic!</h1>
+                    <p>Our expert dermatologist, Dr. Manvitha Poluri, specializes in understanding the root cause of your skin and hair concerns, offering customized treatments to address your specific needs. Explore our treatments and begin your journey to healthier, glowing skin today!
+
                     </p>
+
+
                 </div>
-                <div class="col-lg-3 col-md-4 text-md-end d-flex align-items-center justify-content-end">
+                <!-- <div class="col-lg-3 col-md-4 text-md-end d-flex align-items-center justify-content-end">
                     <a class="btn " style="background-color:green;" href="https://www.aloviaskinclinic.com/services">EXPLORE MORE <img src="https://www.aloviaskinclinic.com/images/long-arrow.svg" alt="skin care"></a>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box ">
-                        <a href="https://www.aloviaskinclinic.com/general-dermatology">
-                            <div class="service-imgbox">
+                </div> -->
+                <div class=" col-lg-4">
+
+                    <!-- <div class="row g-3"> -->
+                        <div class="service-box">
+                            <a class="service-icon" href="./services.html">
+                                <!-- <div class="service-imgbox">
+                                    <img class="responsive-img" src="https://www.aloviaskinclinic.com/images/hair-service.jpg" alt="hair loss treatment">
+                                </div> -->
+                                <div class="service-info">
+                                    <div class="servies-icon"><img src="./icons/hair.png" alt="hair treatment"></div>
+                                    <h4>Hair Treatments</h4>
+    
+                                </div>
+                            </a>
+                        </div>
+                    <!-- </div> -->
+                <!-- <div class="row g-3"> -->
+                    <div class="service-box">
+                        <a href="./services.html">
+                            <!-- <div class="service-imgbox">
                                 <img class="responsive-img" src="https://www.aloviaskinclinic.com/images/skin-service.jpg" alt="skin tag removal">
-                            </div>
+                            </div> -->
                             <div class="service-info">
-                                <div class="servies-icon"><img src="https://www.aloviaskinclinic.com/images/skin-treatment.svg" alt="skin treatment"></div>
-                                <h4>Skin Treatment</h4>
-
+                                <div class="servies-icon"><img src="./icons/skin.png" alt="skin treatment"></div>
+                                <h4>Skin Treatments</h4>
                             </div>
                         </a>
                     </div>
-                </div>
-                <div class="col-md-4">
+                <!-- </div>
+                <div class="row g-3"> -->
                     <div class="service-box">
-                        <a href="https://www.aloviaskinclinic.com/haircare">
-                            <div class="service-imgbox">
-                                <img class="responsive-img" src="https://www.aloviaskinclinic.com/images/hair-service.jpg" alt="hair loss treatment">
-                            </div>
-                            <div class="service-info">
-                                <div class="servies-icon"><img src="https://www.aloviaskinclinic.com/images/hair-treatment.svg" alt="hair treatment"></div>
-                                <h4>Hair Treatment</h4>
-
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <a href="https://www.aloviaskinclinic.com/aesthetic-dermatology">
-                            <div class="service-imgbox">
+                        <a href="./services.html">
+                            <!-- <div class="service-imgbox">
                                 <img class="responsive-img" src="https://www.aloviaskinclinic.com/images/aesthetics-service.jpg" alt="aesthetic dermatology ">
-                            </div>
+                            </div> -->
                             <div class="service-info">
-                                <div class="servies-icon"><img src="https://www.aloviaskinclinic.com/images/aesthetics-treatment.svg" alt="aesthetic treatment"></div>
-                                <h4>Aesthetics Treatment</h4>
+                                <div class="servies-icon"><img src="./icons/cosmetic.png" alt="aesthetic treatment"></div>
+                                <h4>Cosmetic Treatments</h4>
                             </div>
                         </a>
                     </div>
+                <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -333,37 +325,37 @@ text-align:left;
                 <div class="col-lg-12 text-center">
                     <div class="section-title">
                         <span>Why choose us?</span>
-                        <h2>Offer for you</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="chooseus__item">
-                        <img src="img/icons/ci-1.png" alt="">
-                        <h5>Advanced equipment</h5>
-                        <p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor cididunt facilisis.</p>
+                        <img src="./icons/expertise.png" alt="">
+                        <h5>Expertise</h5>
+                        <p>Dr. Manvitha Poluri's expertise and understanding of dermatology's latest advances guarantee top-notch care.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="chooseus__item">
-                        <img src="img/icons/ci-2.png" alt="">
-                        <h5>Qualified doctors</h5>
-                        <p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor cididunt facilisis.</p>
+                        <img src="./icons/convenience.png" alt="">
+                        <h5>Convenience</h5>
+                        <p>Get expert skin and hair care from anywhere with our convenient online consultations.
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="chooseus__item">
-                        <img src="img/icons/ci-3.png" alt="">
-                        <h5>Certified services</h5>
-                        <p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor cididunt facilisis.</p>
+                        <img src="./icons/personalized_care.png" alt="">
+                        <h5>Personalized Care</h5>
+                        <p>We personalize treatments to match your unique skin and hair, ensuring your specific needs are met.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="chooseus__item">
-                        <img src="img/icons/ci-4.png" alt="">
-                        <h5>Emergency care</h5>
-                        <p>Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod tempor cididunt facilisis.</p>
+                        <img src="./icons/trust.png" alt="">
+                        <h5>Trust and Reliability</h5>
+                        <p>We are committed to providing trustworthy advice, ensuring confidence in your treatment plan.</p>
                     </div>
                 </div>
             </div>
@@ -372,7 +364,7 @@ text-align:left;
     <!-- Chooseus Section End -->
     
  
-<section class="tb-space about-aloviagpanel">
+<!-- <section class="tb-space about-aloviagpanel">
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
@@ -387,12 +379,35 @@ text-align:left;
                             experienced staff, and this coupled with Dr. Naren’s
                             expertise makes it the best choice to avail dermatological care that you truly deserve.</p>
 
-                        <a class="btn mt-3" href="https://www.aloviaskinclinic.com/about">MORE ABOUT US <img src="https://www.aloviaskinclinic.com/images/long-arrow.svg" alt="skin care"></a>
+                        <a class="btn mt-3" href="https://www.aloviaskinclinic.com/about">MORE About Doctor <img src="https://www.aloviaskinclinic.com/images/long-arrow.svg" alt="skin care"></a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+        <!-- About Section Begin -->
+        <section class="tb-space bg-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <!-- <div class="img-fluid"> -->
+                            <img class="img-fluid" src="img/doctor/doctor-5.jpeg" alt="">
+                        <!-- </div> -->
+                    </div>
+                    <div class="col-md-7">
+                        <div class="about-info">
+                                <h3 class="com-topsub-heading">ABOUT Manvitha's Skin and Hair Clinic</h3>
+                                <!-- <h2 class="com-title">Welcome to Manvitha's Skin and Hair Clinic</h2> -->
+                            <p>Led by the skilled hands of Dr. Manvitha Poluri, an expert Dermatologist, our clinic is your go-to online destination for top-notch dermatological care. With a deep understanding of the latest treatments and methods, Dr. Manvitha offers personalized consultations that cater to all your skin and hair needs, ensuring the best possible treatment from the comfort of your home.</p>
+                            <a class="bg-purple btn mt-3" href="./about.html">ABOUT Doctor <img src="https://www.aloviaskinclinic.com/images/long-arrow.svg" alt="skin care"></a>
+                           <!-- <a href="#" class="primary-btn normal-btn">Contact us</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section End -->
 
     <!-- Latest News Begin -->
     <!--<section class="latest spad">
@@ -448,16 +463,16 @@ text-align:left;
 
     <!-- Footer Section Begin -->
     <footer class="footer">
-        <div class="footer__top">
+        <!-- <div class="footer__top">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-4">
+                     <div class="col-lg-4 col-md-4">
                         <div class="footer__logo">
                             <a href="#"><img src="img/footer-logo.png" alt=""></a>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-8">
-                        <div class="footer__newslatter">
+                    </div> -->
+                    <!-- <div class="col-lg-4 col-md-8"> -->
+                        <!--<div class="footer__newslatter">
                             <form action="#">
                                 <input type="text" placeholder="Email">
                                 <button type="submit" class="site-btn">Subscribe</button>
@@ -471,64 +486,65 @@ text-align:left;
                             <a href="#"><i class="fa fa-instagram"></i></a>
                             <a href="#"><i class="fa fa-dribbble"></i></a>
                         </div>
-                    </div>
-                </div>
+                    </div>-->
+                <!-- </div>
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__logo">
+                        <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                    </div>
+                </div>
                 <div class="col-lg-2 col-md-3 col-sm-6">
                     <div class="footer__widget">
-                        <h5>Company</h5>
+                       <h5>Company</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Departments</a></li>
-                            <li><a href="#">Find a Doctor</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">News</a></li>
+                            <li><a href="./about.html">About Doctor</a></li>
+                            <li><a href="./appointment.html">Book Consultation</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="footer__widget">
                         <h5>Quick links</h5>
                         <ul>
-                            <li><a href="#">Facial Fillers</a></li>
-                            <li><a href="#">Breast Surgery</a></li>
-                            <li><a href="#">Body Lifts</a></li>
-                            <li><a href="#">Face & Neck</a></li>
-                            <li><a href="#">Fat Reduction</a></li>
+                            <li><a href="./services.html">Hair Loss and Alopecia Treatment</a></li>
+                            <li><a href="./services.html">Acne Treatment</a></li>
+                            <li><a href="./services.html">Fungal Infection Treatment</a></li>
+                            <li><a href="./services.html">Skin Tightening Treatment</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__address">
                         <h5>Contact Us</h5>
                         <ul>
-                            <li><i class="fa fa-map-marker"></i> Los Angeles Gournadi, 1230 Bariasl</li>
-                            <li><i class="fa fa-phone"></i> 1-677-124-44227</li>
-                            <li><i class="fa fa-envelope"></i> Support@gmail.com</li>
+                            <!-- <li><i class="fa fa-phone"></i>8885872872</li> -->
+            <li><i class="fa fa-envelope"></i>dr.polurimanvitha2095@gmail.com</li>
+            <li><i class="fa fa-clock-o"></i> Mon to Sat 3:00pm to 5:00pm</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-12 col-sm-6">
+                <!--<div class="col-lg-4 col-md-12 col-sm-6">
                     <div class="footer__map">
                         <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48158.305462977965!2d-74.13283844036356!3d41.02757295168286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2e440473470d7%3A0xcaf503ca2ee57958!2sSaddle%20River%2C%20NJ%2007458%2C%20USA!5e0!3m2!1sen!2sbd!4v1575917275626!5m2!1sen!2sbd"
                         height="190" style="border:0" allowfullscreen=""></iframe>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
-        <div class="footer__copyright">
+       <!-- <div class="footer__copyright">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
                         <div class="footer__copyright__text">
                             <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
                         </div>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. 
                     </div>
                     <div class="col-lg-5">
                         <ul>
@@ -539,7 +555,7 @@ text-align:left;
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </footer>
     <!-- Footer Section End -->
 

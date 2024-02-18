@@ -137,8 +137,8 @@ ol {
 }
 
 .spad {
-	padding-top: 100px;
-	padding-bottom: 100px;
+	padding-top: 15px;
+	padding-bottom: 50px;
 }
 
 .text-white h1,
@@ -165,12 +165,12 @@ ol {
 	color: #111111;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	border: 2px solid #13a2b7;
+	border: 2px solid #8c52ff;
 	border-radius: 5px;
 }
 
 .primary-btn.normal-btn {
-	background: #13a2b7;
+	background: #8c52ff;
 	color: #ffffff;
 	font-weight: 600;
 }
@@ -178,7 +178,7 @@ ol {
 .site-btn {
 	font-size: 15px;
 	color: #ffffff;
-	background: #13a2b7;
+	background: #8c52ff;
 	font-weight: 600;
 	border: none;
 	border-radius: 5px;
@@ -261,7 +261,7 @@ ol {
 }
 
 .header__top {
-	background: #0c5d69;
+	background: #5629af;
 }
 
 .header__top__left {
@@ -290,6 +290,12 @@ ol {
 	padding: 12px 0;
 }
 
+.header__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
 .header__top__right a {
 	font-size: 16px;
 	color: #ffffff;
@@ -301,12 +307,30 @@ ol {
 	margin-right: 0;
 }
 
+.header__top__right li {
+	font-size: 13px;
+	color: #ffffff;
+	list-style: none;
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.header__top__right li:last-child {
+	margin-right: 0;
+}
+
+.header__top__right li i {
+	font-size: 15px;
+	margin-right: 5px;
+}
+
 .header__logo {
-	padding: 42px 0;
+	/* padding: 20px 0; */
 }
 
 .header__logo a {
 	display: inline-block;
+	width: 300px;
 }
 
 .header__menu__option {
@@ -397,7 +421,7 @@ ol {
 	bottom: 0;
 	width: 100%;
 	height: 2px;
-	background: #13a2b7;
+	background: #8c52ff;
 	content: "";
 	-webkit-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
@@ -431,7 +455,7 @@ ol {
 .hero__text span {
 	font-size: 15px;
 	font-weight: 500;
-	color: #13a2b7;
+	color: #8c52ff;
 	text-transform: uppercase;
 	display: block;
 }
@@ -573,7 +597,7 @@ ol {
 
 .consultation__text__item .section-title h2 b {
 	font-weight: 700;
-	color: #13a2b7;
+	color: #8c52ff;
 }
 
 .consultation__text__item p {
@@ -598,7 +622,7 @@ ol {
 	display: inline-block;
 	height: 50px;
 	width: 50px;
-	background: #13a2b7;
+	background: #8c52ff;
 	border-radius: 50%;
 	line-height: 50px;
 	text-align: center;
@@ -627,6 +651,10 @@ ol {
 	margin-bottom: 16px;
 }
 
+.chooseus__item img {
+	width: 100px;
+}
+
 .chooseus__item p {
 	margin-bottom: 0;
 }
@@ -640,7 +668,7 @@ ol {
 }
 
 .services .section-title span {
-	color: #13a2b7;
+	color: #8c52ff;
 }
 
 .services .section-title h2 {
@@ -663,7 +691,7 @@ ol {
 }
 
 .services__item:hover {
-	background: #13a2b7;
+	background: #8c52ff;
 }
 
 .services__item:hover .services__item__icon span {
@@ -684,7 +712,7 @@ ol {
 }
 
 .services__item__icon span {
-	color: #13a2b7;
+	color: #8c52ff;
 	font-size: 40px;
 	display: inline-block;
 	line-height: 76px;
@@ -732,7 +760,7 @@ ol {
 }
 
 .team__item:hover img {
-	border-color: #13a2b7;
+	border-color: #8c52ff;
 }
 
 .team__item img {
@@ -757,7 +785,7 @@ ol {
 
 .team__item span {
 	font-size: 15px;
-	color: #13a2b7;
+	color: #8c52ff;
 	display: block;
 	margin-bottom: 12px;
 }
@@ -922,6 +950,15 @@ ol {
 	display: none;
 }
 
+.coming_soon {
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+}
+
 /*---------------------
   Footer
 -----------------------*/
@@ -955,7 +992,7 @@ ol {
 	font-size: 14px;
 	color: #ffffff;
 	background: transparent;
-	border: 1px solid #13a2b7;
+	border: 1px solid #8c52ff;
 	padding-left: 20px;
 	border-radius: 50px;
 }
@@ -1023,6 +1060,7 @@ ol {
 .footer__widget ul li {
 	list-style: none;
 	line-height: 30px;
+	padding-left: 0;
 }
 
 .footer__widget ul li a {
@@ -1047,7 +1085,7 @@ ol {
 	font-size: 14px;
 	color: #c4c4c4;
 	font-weight: 300;
-	margin-bottom: 38px;
+	margin-bottom: 10px;
 }
 
 .footer__address ul li:last-child {
@@ -1056,7 +1094,7 @@ ol {
 
 .footer__address ul li i {
 	font-size: 18px;
-	color: #13a2b7;
+	color: #8c52ff;
 	margin-right: 15px;
 }
 
@@ -1116,11 +1154,11 @@ ol {
 }
 
 .footer__copyright__text p i {
-	color: #13a2b7;
+	color: #8c52ff;
 }
 
 .footer__copyright__text p a {
-	color: #13a2b7;
+	color: #8c52ff;
 }
 
 /*---------------------
@@ -1160,7 +1198,7 @@ ol {
 
 .breadcrumb__links span {
 	font-size: 15px;
-	color: #13a2b7;
+	color: #8c52ff;
 	display: inline-block;
 }
 
@@ -1194,7 +1232,7 @@ ol {
 	display: inline-block;
 	height: 50px;
 	width: 50px;
-	background: #13a2b7;
+	background: #8c52ff;
 	border-radius: 50%;
 	line-height: 50px;
 	text-align: center;
@@ -1226,7 +1264,7 @@ ol {
 }
 
 .about__text ul li i {
-	color: #13a2b7;
+	color: #8c52ff;
 	font-size: 15px;
 	margin-right: 6px;
 }
@@ -1281,7 +1319,7 @@ ol {
 .testimonial__author__icon {
 	height: 50px;
 	width: 50px;
-	background: #13a2b7;
+	background: #8c52ff;
 	font-size: 18px;
 	line-height: 50px;
 	text-align: center;
@@ -1340,14 +1378,22 @@ ol {
   Services
 -----------------------*/
 
+.services__title {
+	display: flex;
+	flex-direction: row;
+	height: 50px;
+	margin-bottom: 20px;
+}
+
 .services__title h4 {
 	color: #111111;
 	font-weight: 600;
-	margin-bottom: 25px;
+	width: 100%;
+	align-self: center;
 }
 
-.services__title h4 img {
-	margin-right: 5px;
+.services__title img {
+	margin-right: 15px;
 }
 
 .services__accordion {
@@ -1355,7 +1401,7 @@ ol {
 }
 
 .services__accordion .accordion {
-	border: 1px solid #eaf4f6;
+	border: 1px solid #8c52ff;
 	border-radius: 10px;
 	padding-bottom: 15px;
 }
@@ -1404,7 +1450,7 @@ ol {
 }
 
 .services__accordion .card-body ul {
-	border-bottom: 1px solid #e1e1e1;
+	border-bottom: 1px solid #8c52ff;
 	padding: 24px 0 18px;
 }
 
@@ -1422,7 +1468,7 @@ ol {
 }
 
 .services__accordion .card-body ul li a:hover {
-	color: #13a2b7;
+	color: #8c52ff;
 }
 
 .services__accordion .card-heading a:after,
@@ -1551,7 +1597,7 @@ ol {
 
 .services__details__title span {
 	font-size: 15px;
-	color: #13a2b7;
+	color: #8c52ff;
 }
 
 .services__details__title h3 {
@@ -1570,7 +1616,7 @@ ol {
 }
 
 .services__details__widget h3 {
-	color: #13a2b7;
+	color: #8c52ff;
 	font-weight: 600;
 	margin-top: 10px;
 }
@@ -1585,7 +1631,8 @@ ol {
 }
 
 .services__details__text {
-	margin-bottom: 40px;
+	margin-top: 20px;
+	margin-bottom: 25px;
 }
 
 .services__details__text p {
@@ -1610,6 +1657,11 @@ ol {
 	margin-top: 12px;
 }
 
+.services__details__desc p {
+	margin-top: 10px;
+	margin-bottom: 25px;
+}
+
 .services__details__desc p:last-child {
 	margin-bottom: 0;
 }
@@ -1618,15 +1670,19 @@ ol {
 	margin-bottom: 25px;
 }
 
+.services__details__feature h4 {
+	margin-bottom: 10px;
+}
+
 .services__details__feature li {
 	list-style: none;
 	font-size: 15px;
 	color: #666666;
-	line-height: 36px;
+	line-height: 25px;
 }
 
 .services__details__feature li i {
-	color: #13a2b7;
+	color: #8c52ff;
 	font-size: 15px;
 	margin-right: 6px;
 }
@@ -1660,7 +1716,7 @@ ol {
 }
 
 .pricing__item:hover .pricing__item__title {
-	background: #13a2b7;
+	background: #8c52ff;
 	padding-top: 62px;
 }
 
@@ -1677,7 +1733,7 @@ ol {
 }
 
 .pricing__item:hover .primary-btn {
-	background: #13a2b7;
+	background: #8c52ff;
 	color: #ffffff;
 }
 
@@ -1733,7 +1789,7 @@ ol {
 }
 
 .pricing__item__title h3 {
-	color: #13a2b7;
+	color: #8c52ff;
 	font-weight: 700;
 	-webkit-transition: all, 0.3s;
 	-o-transition: all, 0.3s;
@@ -1771,6 +1827,11 @@ ol {
 	text-align: center;
 }
 
+.doctor__item__container {
+	justify-content: center;
+	align-items: center;
+}
+
 .doctor__item__pic img {
 	height: 470px;
 	width: 470px;
@@ -1789,7 +1850,7 @@ ol {
 }
 
 .doctor__item__text span {
-	color: #13a2b7;
+	color: #8c52ff;
 	font-size: 15px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -1815,7 +1876,7 @@ ol {
 }
 
 .doctor__item__text ul li i {
-	color: #13a2b7;
+	color: #8c52ff;
 	font-size: 15px;
 	margin-right: 6px;
 }
@@ -2056,7 +2117,7 @@ ol {
 }
 
 .blog__details__tag p i {
-	color: #13a2b7;
+	color: #8c52ff;
 }
 
 .blog__details__tag a {
@@ -2249,7 +2310,7 @@ ol {
 	line-height: 70px;
 	text-align: center;
 	font-size: 30px;
-	color: #13a2b7;
+	color: #8c52ff;
 	float: left;
 	margin-right: 30px;
 }
@@ -2421,7 +2482,7 @@ ol {
 		top: 0;
 		height: 100%;
 		width: 100%;
-		background: rgba(0, 0, 0, 0.7);
+		background: #5629af;
 		content: "";
 		z-index: 98;
 		-webkit-transition: all, 0.5s;
@@ -2506,7 +2567,7 @@ ol {
 		line-height: 30px;
 	}
 	.offcanvas__widget li i {
-		color: #13a2b7;
+		color: #8c52ff;
 		font-size: 15px;
 		margin-right: 5px;
 	}
@@ -2695,7 +2756,7 @@ ol {
 		line-height: 30px;
 	}
 	.offcanvas__widget li i {
-		color: #13a2b7;
+		color: #8c52ff;
 		font-size: 15px;
 		margin-right: 5px;
 	}
