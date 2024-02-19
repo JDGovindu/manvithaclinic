@@ -31,19 +31,35 @@
     <script src="jquery.js"></script> 
     <script src="services.js"></script>
     
-    <style>
+      <style>
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
   .something {
     height: 150px;;
   }
+  
+    .hide-on-large{
+    display:none;
+  }
 }
+
+@media screen and (max-width: 992px) {
+  .something {
+    height: 30px;;
+    
+  }
+  
+  .hide-on-large{
+    display: flex;
+  }
+}
+
 
 .carousel-caption{
 left:6%;
 text-align:left;
 }
-</style>    
+</style>      
 </head>
 
 <body>
@@ -157,6 +173,11 @@ text-align:left;
     </section>-->
     <!-- Breadcrumb Section End -->
  <div class="something"></div>
+  <div class="hide-on-large" style="justify-content: center;align-items: center;">
+      
+              <a href="./appointment.html" class="primary-btn">Book Consultation</a>
+       
+  </div>
     <!-- Services Section Begin -->
     <section class="services-page spad">
         <div class="container">
@@ -221,7 +242,7 @@ text-align:left;
                             <div class="accordion" id="accordionExample">
                                 <div class="card">
                                     <div class="card-heading active">
-                                        <a onclick="changeContent('Hair Loss and Alopecia Treatment')" data-toggle="collapse" data-target="#collapseOne">
+                                        <a data-toggle="collapse" data-target="#collapseOne">
                                             Hair Treatments
                                         </a>
                                     </div>
@@ -236,7 +257,7 @@ text-align:left;
                                 </div>
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a onclick="changeContent('Acne Treatment')" data-toggle="collapse" data-target="#collapseTwo">
+                                        <a data-toggle="collapse" data-target="#collapseTwo">
                                             Skin Treatments
                                         </a>
                                     </div>
@@ -257,7 +278,7 @@ text-align:left;
                                 </div>
                                 <div class="card">
                                     <div class="card-heading">
-                                        <a onclick="changeContent('Acne Scar Treatment')" data-toggle="collapse" data-target="#collapseThree">
+                                        <a data-toggle="collapse" data-target="#collapseThree">
                                             Cosmetic Treatments
                                         </a>
                                     </div>

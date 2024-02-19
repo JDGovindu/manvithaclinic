@@ -31,19 +31,35 @@
     <script src="jquery.js"></script> 
     <script src="services.js"></script>
 
-<style>
+   <style>
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
   .something {
     height: 150px;;
   }
+  
+    .hide-on-large{
+    display:none;
+  }
 }
+
+@media screen and (max-width: 992px) {
+  .something {
+    height: 30px;;
+    
+  }
+  
+  .hide-on-large{
+    display: flex;
+  }
+}
+
 
 .carousel-caption{
 left:6%;
 text-align:left;
 }
-</style>    
+</style>       
     
 </head>
 
@@ -264,6 +280,11 @@ text-align:left;
     <!-- Consultation Section End -->
     
      <div class="something"></div>
+      <div class="hide-on-large" style="justify-content: center;align-items: center;">
+      
+              <a href="./appointment.html" class="primary-btn">Book Consultation</a>
+       
+  </div>
     
       <section class="our-servicepanel tb-space bg-gray">
         <div class="container">
@@ -284,7 +305,7 @@ text-align:left;
 
                     <!-- <div class="row g-3"> -->
                         <div class="service-box">
-                            <a class="service-icon" href="./services.html?header=Hair Treatments&subHeader=Hair Loss and Alopecia Treatment">
+                            <a class="service-icon" href="./services.html?subHeader=Hair Loss and Alopecia Treatment">
                                 <!-- <div class="service-imgbox">
                                     <img class="responsive-img" src="https://www.aloviaskinclinic.com/images/hair-service.jpg" alt="hair loss treatment">
                                 </div> -->
@@ -298,7 +319,7 @@ text-align:left;
                     <!-- </div> -->
                 <!-- <div class="row g-3"> -->
                     <div class="service-box">
-                        <a href="services.html?header=Skin Treatments&subHeader=Acne Treatment">
+                        <a href="services.html?subHeader=Acne Treatment">
                             <!-- <div class="service-imgbox">
                                 <img class="responsive-img" src="https://www.aloviaskinclinic.com/images/skin-service.jpg" alt="skin tag removal">
                             </div> -->
@@ -311,7 +332,7 @@ text-align:left;
                 <!-- </div>
                 <div class="row g-3"> -->
                     <div class="service-box">
-                        <a href="./services.html?header=Cosmetic Treatments&subHeader=Acne Scar Treatment">
+                        <a href="./services.html?subHeader=Acne Scar Treatment">
                             <!-- <div class="service-imgbox">
                                 <img class="responsive-img" src="https://www.aloviaskinclinic.com/images/aesthetics-service.jpg" alt="aesthetic dermatology ">
                             </div> -->
