@@ -1431,13 +1431,13 @@ ol {
 	margin-bottom: -6px;
 	cursor: pointer;
 	background: transparent;
-	-webkit-transition: 0.2s;
-	-o-transition: 0.2s;
-	transition: 0.2s;
+	-webkit-transition: 0.05s;
+	-o-transition: 0.05s;
+	transition: 0.05s;
 }
 
 .services__accordion .card-heading.active {
-	background: #f2f7f8;
+	background: #e6e8e8;
 }
 
 .services__accordion .card-heading.active a {
