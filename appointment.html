@@ -35,19 +35,35 @@
     });
     </script> 
 
-<style>
+   <style>
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
   .something {
     height: 150px;;
   }
+  
+    .hide-on-large{
+    display:none;
+  }
 }
+
+@media screen and (max-width: 992px) {
+  .something {
+    height: 30px;;
+    
+  }
+  
+  .hide-on-large{
+    display: flex;
+  }
+}
+
 
 .carousel-caption{
 left:6%;
 text-align:left;
 }
-</style>    
+</style>     
     
 </head>
 
@@ -147,6 +163,11 @@ text-align:left;
     <!-- Header Section End -->
     
      <div class="something"></div>
+      <div class="hide-on-large" style="justify-content: center;align-items: center;">
+      
+              <a href="./appointment.html" class="primary-btn">Book Consultation</a>
+       
+  </div>
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/manvitha_skin_and_hair_clinic?hide_gdpr_banner=1&primary_color=8c52ff" style="min-width:320px;height:700px;"></div>

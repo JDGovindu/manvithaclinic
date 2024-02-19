@@ -33,11 +33,27 @@
     
     <style>
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
   .something {
     height: 150px;;
   }
+  
+    .hide-on-large{
+    display:none;
+  }
 }
+
+@media screen and (max-width: 992px) {
+  .something {
+    height: 100px;;
+    
+  }
+  
+  .hide-on-large{
+    display: flex;
+  }
+}
+
 
 .carousel-caption{
 left:6%;
@@ -177,6 +193,11 @@ text-align:left;
     </section> -->
     <!-- About Section End -->
  <div class="something"></div>
+ <div class="hide-on-large" style="justify-content: center;align-items: center;">
+      
+              <a href="./appointment.html" class="primary-btn">Book Consultation</a>
+       
+  </div>
   <!-- Doctor Section Begin -->
     <section class="doctor spad">
         <div class="container">
