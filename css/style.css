@@ -1464,7 +1464,7 @@ ol {
 	list-style: none;
 }
 
-.highlight a {
+.services__accordion .card-body .highlight  {
 	color: #8c52ff;
 }
 

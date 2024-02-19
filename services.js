@@ -986,9 +986,8 @@ function changeContent(clickedElement) {
     subHeaderList = element.getElementsByClassName("collapse")[0];
     subHeaderElements = subHeaderList.querySelectorAll("a");
 
-    subHeaderElements.forEach((subHeaderElement) => {
-      console.log(subHeaderElement.innerHTML === subHeader);
-      if (subHeaderElement.innerHTML === subHeader) {
+    subHeaderElements.forEach(function (subHeaderElement) {
+      if (subHeaderElement.textContent.includes(subHeader)) {
         subHeaderElement.classList.add("highlight");
       } else subHeaderElement.classList.remove("highlight");
     });
