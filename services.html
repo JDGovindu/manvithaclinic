@@ -144,7 +144,7 @@
                 <div class="col-lg-8 order-lg-2">
                     <div class="services__details" id="services__details">
                         <div class="services__details__title">
-                            <span>Haircare Treatments</span>
+                            <span>Hair Treatments</span>
                             <h3>Hair Loss and Alopecia Treatment</h3>
                         </div>
                         <div class="services__details__text">
@@ -208,8 +208,8 @@
                                     <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
                                         <div class="card-body">
                                             <ul>
-                                                <li><a onclick="changeContent(this)" href="#">Hair Loss and Alopecia Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Scalp Conditions Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Hair Loss and Alopecia Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Scalp Conditions Treatment</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -223,14 +223,14 @@
                                     <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
                                         <div class="card-body">
                                             <ul>
-                                                <li><a onclick="changeContent(this)" href="#">Acne Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Pigmentation and Melasma Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Psoriasis Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Contact Dermatitis Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Herpes Zoster Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Urticaria/Hives Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Fungal Infection Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Nail Diseases treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Acne Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Pigmentation and Melasma Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Psoriasis Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Contact Dermatitis Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Herpes Zoster Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Urticaria/Hives Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Fungal Infection Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Nail Diseases treatment</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -244,13 +244,13 @@
                                     <div id="collapseThree" class="collapse" data-parent="#accordionExample">
                                         <div class="card-body">
                                             <ul>
-                                                <li><a onclick="changeContent(this)" href="#">Acne Scar Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Medi Facials Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Medical Peels Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Botox & fillers Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Mesotherapy Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Skin Tightening Treatment</a></li>
-                                                <li><a onclick="changeContent(this)" href="#">Laser Hair Removal Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Acne Scar Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Medi Facials Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Medical Peels Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Botox & fillers Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Mesotherapy Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Skin Tightening Treatment</a></li>
+                                                <li><a onclick="changeContent(this.innerHTML)" href="#">Laser Hair Removal Treatment</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -374,10 +374,10 @@
                     <div class="footer__widget">
                         <h5>Quick links</h5>
                         <ul>
-                            <li><a href="./services.html">Hair Loss and Alopecia Treatment</a></li>
-                            <li><a href="./services.html">Acne Treatment</a></li>
-                            <li><a href="./services.html">Fungal Infection Treatment</a></li>
-                            <li><a href="./services.html">Skin Tightening Treatment</a></li>
+                            <li><a href="./services.html?subHeader=Hair Loss and Alopecia Treatment">Hair Loss and Alopecia Treatment</a></li>
+                            <li><a href="./services.html?subHeader=Acne Treatment">Acne Treatment</a></li>
+                            <li><a href="./services.html?subHeader=Fungal Infection Treatment">Fungal Infection Treatment</a></li>
+                            <li><a href="./services.html?subHeader=Skin Tightening Treatment">Skin Tightening Treatment</a></li>
                         </ul>
                     </div>
                 </div>
@@ -433,6 +433,9 @@
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript">
+        changeContent()
+    </script>
 </body>
 
 </html>
