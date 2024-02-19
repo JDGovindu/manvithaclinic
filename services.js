@@ -973,20 +973,41 @@ const servicesData = {
 };
 
 function changeContent(clickedElement) {
-  console.log({ clickedElement });
-  const subHeader = getUrlParams();
-  console.log({ subHeader });
-  const dataKey =
-    clickedElement || subHeader || "Hair Loss and Alopecia Treatment";
-  const currData = servicesData[dataKey];
-  console.log({ currData });
+  const urlParams = getUrlParams();
+  const subHeader =
+    clickedElement || urlParams.subHeader || "Hair Loss and Alopecia Treatment";
+  const currData = servicesData[subHeader];
+  const header = currData.title;
   var contentArea = document.getElementById("services__details");
-  var sideBarContent = document.getElementById("accordionExample");
-  console.log({ sideBarContent });
+
+  let elements = document.querySelectorAll(".card");
+  elements.forEach(function (element) {
+    headerElement = element.getElementsByClassName("card-heading")[0];
+    subHeaderList = element.getElementsByClassName("collapse")[0];
+    subHeaderElements = subHeaderList.querySelectorAll("a");
+
+    subHeaderElements.forEach((subHeaderElement) => {
+      console.log(subHeaderElement.innerHTML === subHeader);
+      if (subHeaderElement.innerHTML === subHeader) {
+        subHeaderElement.classList.add("highlight");
+      } else subHeaderElement.classList.remove("highlight");
+    });
+
+    if (!clickedElement) {
+      if (headerElement.textContent.includes(header)) {
+        headerElement.classList.add("active");
+      } else headerElement.classList.remove("active");
+
+      if (subHeaderList.textContent.includes(subHeader)) {
+        subHeaderList.classList.add("show");
+      } else subHeaderList.classList.remove("show");
+    }
+  });
+
   contentArea.innerHTML = `
    <div class="services__details__title">
-         <span>${currData.title}</span>
-         <h3>${dataKey}</h3>
+         <span>${header}</span>
+         <h3>${subHeader}</h3>
    </div>
    <div class="services__details__text">
          <p>${currData.summary}</p>
@@ -1018,6 +1039,7 @@ function changeContent(clickedElement) {
 
 function getUrlParams() {
   const params = new URLSearchParams(document.location.search);
+  const header = params.get("header");
   const subHeader = params.get("subHeader");
-  return subHeader;
+  return { header, subHeader };
 }
